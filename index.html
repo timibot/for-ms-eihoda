@@ -5,7 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Be My Girlfriend?</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type ="image/png "href="./images/favicon.png">
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <style>
+    /* Footer fixed to bottom */
+    body { padding-bottom: 3.5rem; /* avoid content behind the fixed footer */ }
+    .site-footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      font-size: 0.95rem;
+      color: orange; /* orange text */
+      background: inherit; /* match the page background */
+      box-shadow: 0 -1px 4px rgba(0,0,0,0.06);
+    }
+    .site-footer p { margin: 0; }
+  </style>
 </head>
 <body>
 
@@ -20,7 +37,11 @@
 
   <div class="message" id="message"></div>
 
+  <!-- Footer with copyright symbol -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site copyright">
+    <p>&copy; Devbyte 2025</p>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
-
